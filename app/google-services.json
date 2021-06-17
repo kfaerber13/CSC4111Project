@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "171461655165",
+    "project_id": "csc4111project",
+    "storage_bucket": "csc4111project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171461655165:android:16dc5c21a7552fa8d00f14",
+        "android_client_info": {
+          "package_name": "com.android.reptilestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171461655165-tq4fe4j86fufif0mlngfjluojbn5gbi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB75NjQVphiTYS0kxBhs0xUy1K48MnSqaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171461655165-tq4fe4j86fufif0mlngfjluojbn5gbi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
