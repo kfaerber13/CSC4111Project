@@ -1,4 +1,4 @@
-package com.example.reptilestore.ui.home;
+package com.android.reptilestore.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

@@ -1,7 +1,8 @@
-package com.example.reptilestore;
+package com.android.reptilestore;
 
 import android.os.Bundle;
 
+import com.example.reptilestore.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
