@@ -3,41 +3,4 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-
-    <string name="title_settings">settings</string>
-    <string name="title_activity_settings">Settings</string>
-
-    <!-- Preference Titles -->
-    <string name="messages_header">General</string>
-    <string name="sync_header">Security</string>
-
-    <!-- Messages Preferences -->
-    <string name="signature_title">Personal Information</string>
-    <string name="reply_title">Payments</string>
-
-    <string name="change_securityinfo">Security Information Change</string>
-    <string name="title_securityinfo">Security Infomation</string>
-    <string name="remove_account">Remove Account</string>
-    <string name="confirm_remove_account">Are you sure remove account?</string>
-    <string name="change_password">Change Password</string>
-    <string name="new_password">New Password</string>
-    <string name="confirm_password">Confirm Password</string>
-    <string name="current_password">Current Password</string>
-    <string name="cancel">Cancel</string>
-    <string name="ok">Ok</string>
-    <string name="change">Change</string>
-    <string name="wrong_password">Wrong Password</string>
-    <string name="not_login_title">NOT LOG IN</string>
-    <string name="not_login_summary">skip login</string>
-    <string name="hide_first_name_title">Hide First Name</string>
-    <string name="hide_first_name_summary">hide user first name </string>
-    <string name="create_account">Create Account</string>
-    <string name="success_change_password">Password change success.</string>
-
-    <!-- Sync Preferences -->
-    <string name="sync_title">Security and Login</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>
