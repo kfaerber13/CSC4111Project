@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">Reptile Store</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDtKxskoGcv22xBe1VKCxrOSOWzMqWbYgg</string>
 
     <string name="title_settings">settings</string>
     <string name="title_activity_settings">Settings</string>
