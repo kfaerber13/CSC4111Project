@@ -1,33 +1,42 @@
 {
   "project_info": {
-    "project_number": "171461655165",
-    "project_id": "csc4111project",
-    "storage_bucket": "csc4111project.appspot.com"
+    "project_number": "556492323779",
+    "firebase_url": "https://final-reptile-default-rtdb.firebaseio.com",
+    "project_id": "final-reptile",
+    "storage_bucket": "final-reptile.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:171461655165:android:16dc5c21a7552fa8d00f14",
+        "mobilesdk_app_id": "1:556492323779:android:0ce8b82f9398072eb01b76",
         "android_client_info": {
-          "package_name": "com.android.reptilestore"
+          "package_name": "com.happy.Reptile_Store"
         }
       },
       "oauth_client": [
         {
-          "client_id": "171461655165-tq4fe4j86fufif0mlngfjluojbn5gbi9.apps.googleusercontent.com",
+          "client_id": "556492323779-ktdin4ohlciqp5m8laqa2d94ghin5um2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.happy.Reptile_Store",
+            "certificate_hash": "e0b6f69fa1e5fcfc086c735f7bba179ab1162724"
+          }
+        },
+        {
+          "client_id": "556492323779-4vm9dso753t1oitstjhpr15mklmp69i9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB75NjQVphiTYS0kxBhs0xUy1K48MnSqaQ"
+          "current_key": "AIzaSyDSH91jkN_tXV8QSo3F5b9G5nY5fRyIZaw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "171461655165-tq4fe4j86fufif0mlngfjluojbn5gbi9.apps.googleusercontent.com",
+              "client_id": "556492323779-4vm9dso753t1oitstjhpr15mklmp69i9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

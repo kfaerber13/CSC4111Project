@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#143D59"
+        tools:ignore="MissingConstraints"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="550dp"
+            android:fontFamily="@font/bilbo_swash_caps"
+            android:lineSpacingExtra="12sp"
+            android:rotationY="17"
+            android:text="Login"
+            android:textColor="#FFFF"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn"
+        android:layout_marginTop="200dp"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/slogan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In to continue"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:transitionName="logo_desc" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+
+                >
+
+                <EditText
+                    android:id="@+id/username_login"
+                    android:layout_width="match_parent"
+                    android:hint="Email"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_outline_email_24"
+                    android:drawablePadding="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="true"
+                android:textColorHint="#FFFFFF"
+                android:layout_marginTop="20dp"
+                app:hintAnimationEnabled="true"
+                >
+
+                <EditText
+                    android:id="@+id/password_login"
+                    android:hint="Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_outline_remove_red_eye_24"
+                    android:textColor="@color/white"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:background="#00000000"
+                android:elevation="0dp"
+                android:text="Forget Password?" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:text="login"
+                android:backgroundTint="#143D59"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal">
+
+            </Button>
+
+            <Button
+                android:id="@+id/signup_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:background="#00000000"
+                android:onClick="signup"
+                android:elevation="0dp"
+                android:text="New User? SIGN UP"
+                android:textColor="@color/white"
+                android:transitionName="login_signup_tran" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:backgroundTint="#143D59"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
