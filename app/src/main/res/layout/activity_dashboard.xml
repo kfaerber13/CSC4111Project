@@ -8,15 +8,31 @@
     tools:context=".Dashboard">
 
     <TextView
+        android:id="@+id/welcometext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Congratulation! You are Logged in \n Happy coding"
+        android:text="Congratulation! You are Logged in\n Happy coding"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="sans-serif-black"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click for Logout!"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:onClick="logout"
+        app:layout_constraintTop_toBottomOf="@+id/welcometext"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         android:fontFamily="sans-serif-black"
         >
     </TextView>

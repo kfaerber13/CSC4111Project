@@ -127,4 +127,8 @@ public class Login extends AppCompatActivity {
         startActivity(p);
         finish();
     }
+
+    public void forgetpassword(View view){
+        startActivity(new Intent(Login.this, forgetpassword.class));
+    }
 }

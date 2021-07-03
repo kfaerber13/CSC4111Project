@@ -101,7 +101,10 @@ public class Signup extends AppCompatActivity {
         finish();
     }
 
-
+    public void already(View view) {
+        Intent intent = new Intent(Signup.this, Login.class);
+        startActivity(intent);
+    }
 
     public void back(View view) {
         Intent intent = new Intent(Signup.this, Login.class);
