@@ -122,7 +122,7 @@ public class Login extends AppCompatActivity {
     }
 
     private void gotoMainPage() {
-        Intent p = new Intent(getApplicationContext(), Dashboard.class);
+        Intent p = new Intent(getApplicationContext(), MainActivity.class);
         // add flag
         startActivity(p);
         finish();
