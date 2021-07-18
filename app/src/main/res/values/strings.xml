@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Reptile Store</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDtKxskoGcv22xBe1VKCxrOSOWzMqWbYgg</string>
-
+    <string name="title_home">Home</string>
+    <string name="title_shop_animals">Shop Animals</string>
+    <string name="title_shop_supplies">Shop Supplies</string>
 </resources>
