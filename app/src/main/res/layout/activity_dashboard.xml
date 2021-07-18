@@ -1,41 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/layer2"
+    android:background="#143D59"
     tools:context=".Dashboard">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:background="@drawable/btn"
+        tools:ignore="MissingConstraints">
+
+
     <TextView
-        android:id="@+id/welcometext"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Congratulation! You are Logged in\n Happy coding"
+        android:layout_marginRight="260dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Hi, Shafiq"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:fontFamily="sans-serif-black"
         >
     </TextView>
 
     <TextView
+        android:id="@+id/greetings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click for Logout!"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:layout_marginTop="30dp"
-        android:onClick="logout"
-        app:layout_constraintTop_toBottomOf="@+id/welcometext"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="258dp"
+        android:text="Good Evening!"
+        android:layout_marginTop="5dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:fontFamily="sans-serif-black"
-        >
-    </TextView>
+        android:textColor="@color/black"
+        android:textSize="18sp"
+    />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
