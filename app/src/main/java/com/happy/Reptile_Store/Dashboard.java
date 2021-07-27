@@ -33,4 +33,12 @@ public class Dashboard extends AppCompatActivity {
         Intent intent =new Intent(Dashboard.this,contact_us.class);
         startActivity(intent);
     }
+
+    public void logout(View view){
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        firebaseAuth.signOut();
+        Intent intent =new Intent(Dashboard.this,Login.class);
+        startActivity(intent);
+        finish();
+    }
 }
