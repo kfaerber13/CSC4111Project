@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Reptile Store</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDtKxskoGcv22xBe1VKCxrOSOWzMqWbYgg</string>
+    <string name="cat">Cat</string>
+    <string name="fish">Fish</string>
+    <string name="dog">Dog</string>
+    <string name="puppy">Puppy</string>
+    <string name="cat_food">Cat Food</string>
 
 </resources>
