@@ -18,6 +18,18 @@
         <activity android:name=".Signup" />
         <activity android:name=".Dashboard" />
         <activity android:name=".Splash_activity">
+        <activity
+            android:name="com.happy.Reptile_Store.petsgrocery.CartActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.happy.Reptile_Store.petsgrocery.MainActivity"
+        />
+        <activity
+            android:name="com.happy.Reptile_Store.petsgrocery.ProductActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.happy.Reptile_Store.petsgrocery.MainActivity" />
+
+        <activity android:name="com.happy.Reptile_Store.petsgrocery.MainActivity" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
