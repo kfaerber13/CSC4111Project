@@ -48,6 +48,18 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/avatar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ml"
+            app:layout_constraintBottom_toBottomOf="@+id/album_circle"
+            app:layout_constraintEnd_toEndOf="@+id/album_circle"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="@+id/album_circle"
+            app:layout_constraintTop_toTopOf="@+id/album_circle"
+            app:layout_constraintVertical_bias="0.53" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/helper"
@@ -82,5 +94,488 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+        <TextView
+            android:id="@+id/greetings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="258dp"
+            android:text="Good Evening!"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/helper"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <HorizontalScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@id/greetings"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="clip_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="@string/cat"
+                    android:background="@drawable/btnnew"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="center_vertical"
+                    tools:ignore="RtlCompat" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="@string/fish"
+                    android:background="@drawable/btnnew"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="@string/dog"
+                    android:background="@drawable/btnnew"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="@string/puppy"
+                    android:background="@drawable/btnnew"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="@string/cat_food"
+                    android:background="@drawable/btnnew"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/scrollview">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/crete_round"
+                android:text="Populer Item"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:textColor="#143D59"
+                app:layout_constraintTop_toBottomOf="@id/scrollview" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/threedots"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="20dp"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:id="@+id/main2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/main">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card2"
+                    android:layout_width="150dp"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:outlineAmbientShadowColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/avatar">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:id="@+id/heart2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_baseline_favorite_24"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/product2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/catfood"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/black"
+                            android:text="North Paw Grain\n     free (Adult)"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/red"
+                            android:textSize="22sp"
+                            android:text="$120"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card"
+                    android:layout_width="150dp"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginStart="10dp"
+                    android:outlineAmbientShadowColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/avatar">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:id="@+id/heart"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_baseline_favorite_24"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/product"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/catfood2"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/black"
+                            android:text="North Paw Grain\n     free (Adult)"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/red"
+                            android:textSize="22sp"
+                            android:text="$150"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card3"
+                    android:layout_width="150dp"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginStart="10dp"
+                    android:outlineAmbientShadowColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/avatar">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:id="@+id/heart3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_baseline_favorite_24"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/product3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/catfood2"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/black"
+                            android:text="North Paw Grain\n     free (Adult)"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/red"
+                            android:textSize="22sp"
+                            android:text="$150"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card4"
+                    android:layout_width="150dp"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginStart="10dp"
+                    android:outlineAmbientShadowColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/avatar">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:id="@+id/heart4"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_baseline_favorite_24"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/product4"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/catfood2"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/black"
+                            android:text="North Paw Grain\n     free (Adult)"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/red"
+                            android:textSize="22sp"
+                            android:text="$150"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/main2">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardpet"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:outlineAmbientShadowColor="@color/black"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/puppy" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/black"
+                        android:text="Sed ut perspiciatis unde omnis iste natus error sit\n doloremque laudantium,\n totam rem aperiam, eaque ipsa quae" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </HorizontalScrollView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="340dp"
+            android:background="@drawable/ic_outline_home_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/favorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="70dp"
+            app:layout_constraintLeft_toRightOf="@id/home"
+            android:background="@drawable/ic_baseline_favorite_border_24"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="70dp"
+            app:layout_constraintLeft_toRightOf="@id/favorite"
+            android:background="@drawable/ic_outline_notifications_active_24"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="70dp"
+            app:layout_constraintLeft_toRightOf="@id/notification"
+            android:background="@drawable/ic_baseline_search_24"
+            tools:ignore="MissingConstraints" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
