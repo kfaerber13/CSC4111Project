@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
-public class DashboardTest {
+/*public class DashboardTest {
     final Dashboard toTest = new Dashboard();
     final FirebaseAuth mAuthMock = mock(FirebaseAuth.class);
 
@@ -20,4 +20,4 @@ public class DashboardTest {
     public void testOne() {
 
     }
-}
+}*/
